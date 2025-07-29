@@ -31,11 +31,7 @@
 }
 
 
-span{
-    color: var(--Stone-900);
-    font-weight: 700;
-    font-size: 14px;
-}
+
 
 
 
@@ -72,8 +68,20 @@ section{
 }
 
 h2{
-  font-family:young serif;
+  font-family:serif;
   font-size: 30px;
+}
+
+.break{
+    font-family:serif;
+    font-size: 30px;
+    display: inline;
+    white-space: normal;
+}
+
+.div-one p{
+    color: var(--Stone-600);
+    font-weight: 500;
 }
 
 
@@ -176,6 +184,10 @@ h2{
     color: var(--Stone-);
 }
 
+.div-four li br{
+    display: inline;
+}
+
 
             /* Nutrition part (div-five) */
 
@@ -207,4 +219,80 @@ tr{
 
 th{
     color: var(--Brown-800);
+}
+
+
+/* this is the responsiveness  */
+
+
+@media screen and (max-width:480px) {
+    body{
+        padding: 0px 0px 0px 0px;
+    }
+
+    main{
+        padding: 0px 0px 0px 0px;
+    }
+
+    .div-one{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        
+    }
+
+    .div-one h2{
+       font-size: 35px;
+       text-align:start;
+       padding-left: 20px;
+    }
+
+    .break{
+        font-size: 35px;
+        display: block;
+        text-align:start;
+    }
+
+    .div-one p{
+        padding-left: 20px;
+        font-size: 16px;
+
+    }
+
+    .div-two{
+        padding-left: 35px;
+    }
+
+    .div-three{
+         padding-left: 20px;
+    }
+
+    .div-four{
+         padding-left: 20px;
+    }
+
+    .div-four ol{
+       display: flex;
+       flex-direction: column;
+       gap: 20px;
+    }
+
+  
+
+    .div-four li br{
+        display: none;
+    }
+
+    .div-four li{
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    .div-five{
+        padding-left: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
 }
