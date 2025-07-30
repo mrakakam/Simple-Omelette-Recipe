@@ -230,7 +230,8 @@ th{
     
     body{
         padding: 0px 0px 0px 0px;
-        overscroll-behavior: none;
+        overscroll-behavior-y: none;
+        background-color: var(--White);
     }
 
     main{
